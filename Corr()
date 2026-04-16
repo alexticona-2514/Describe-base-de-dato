@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Crear datos de ejemplo
+df = pd.DataFrame({
+    "horas_estudio": [1, 2, 3, 4, 5],
+    "nota": [50, 55, 65, 70, 80],
+    "horas_sueno": [8, 7, 6, 6, 5]
+})
+
+# Calcular correlación
+correlacion = df.corr()
+
+print(correlacion)
